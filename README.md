@@ -2,6 +2,17 @@
 ## Prerequisites
 - Docker and Docker Compose installed on your system.
 
+## Overview of Services
+This configuration integrates multiple services to create a comprehensive media management and streaming solution:
+- **Plex:** A media streaming service that organizes and allows you to stream your media content.
+- **qBittorrent:** A torrent client for downloading media files.
+- **Sonarr, Radarr, Prowlarr, Readarr, and Lidarr (collectively known as Servarr):** Automated media management tools. Sonarr manages TV shows, Radarr manages movies, Prowlarr is for indexing and searching, Readarr for eBooks, and Lidarr for music.
+
+These services work together as follows:
+1. **qBittorrent** downloads media files (movies, TV shows, music, etc.) based on torrent files.
+2. **Servarr applications** automate the process of finding and downloading media. They interface with qBittorrent to download files and organize them appropriately.
+3. **Plex** then accesses these organized media files, creating a user-friendly library that can be streamed to various devices.
+
 ## Setup
 #### Setup Submodules
 Servarr is included as a submodule in a separate repository.
