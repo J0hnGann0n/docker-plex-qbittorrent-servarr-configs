@@ -23,20 +23,27 @@ git submodule update --init
 Default configurations are provided in template environment files. Update the DATA_ROOT in each file to your storage location.
 ```bash
 cp plex/env.template plex/.env
+```
+```bash
 cp qbittorrent/env.template qbittorrent/.env
+```
+```bash
 cp servarr/env.template servarr/.env
 ```
 
 #### Start Services
 Each service has a docker-compose.yml file, sourcing environment variables from the respective .env files.
+
+###### Start Plex
 ```bash
-# Start Plex
 docker compose -f plex/docker-compose.yml up -d 
-
-# Start qBittorrent
+```
+###### Start qBittorrent
+```bash
 docker compose -f qbittorrent/docker-compose.yml up -d
-
-# Start Servarr
+```
+###### Start Servarr
+```bash
 docker compose -f servarr/docker-compose.yml up -d
 ```
 
