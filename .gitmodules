@@ -1,0 +1,3 @@
+[submodule "servarr"]
+    path = servarr
+    url = https://github.com/j0hngann0n/servarr.git
