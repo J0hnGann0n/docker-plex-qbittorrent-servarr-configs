@@ -20,7 +20,9 @@ Servarr is included as a submodule in a separate repository.
 git submodule update --init
 ```
 #### Copy Template Config Files
-Default configurations are provided in template environment files. Run the following commands to create your .env files. Update the DATA_ROOT in each file to your storage location. This is where qbittorrent will store its downloads and where media files wil be stored after download in there respective folders. Eg. Tv Shows, Movies etc.
+Default configurations are provided in template environment files. Run the following commands to create your .env files. Update the DATA_ROOT in each file to your storage location. This is where qbittorrent will store its downloads and where media files wil be stored after download in there respective folders. Eg. Tv Shows, Movies etc.   
+
+Make sure Data root is the same in all cases.
 ```bash
 cp plex/env.template plex/.env
 ```
